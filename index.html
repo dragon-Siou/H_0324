@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <script
+        src="https://code.jquery.com/jquery-2.2.4.min.js"
+        integrity="sha256-BbhdlvQf/xTY9gja0Dq3HiwQF8LaCRTXxZKRutelT44="
+        crossorigin="anonymous"></script>
+
+        <style>
+            div{
+                border-width: 2px;
+                border-style:groove;
+                border-color:#FFAC55;
+                padding: 5px;
+            }
+            #div1 p{
+                color: red;
+            }
+            #div2 > p{
+                color:darkorange;
+            }
+            div + p{
+                color:purple;
+            }
+        </style>
+
+    </head>
+
+    <body>
+        <div id="div1">
+            <p> 第一個div文字1 </p>
+            <div><p> 第一個div文字2(還有包一層div) </p></div>
+        </div>
+        <p>div1下面的文字</p>
+        <div id="div2">
+            <p> 第二個div文字1 </p>
+            <div><p> 第二個div文字2(還有包一層div) </p></div>
+        </div>
+        <p>div2下面的文字1</p>
+        <p>div2下面的文字2</p>
+    </body>
+</html>
